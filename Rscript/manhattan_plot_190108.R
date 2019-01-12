@@ -8,9 +8,9 @@ library(qqman)
 head(gwasResults)
 
 inf = "manhattan_chr.txt"
-gwasResults <- read.table(inf, header=TRUE, sep="\t", quote="")#in_fで指定したファイルの読み込み
+gwasResults <- read.table(inf, header=TRUE, sep="\t", quote="")
 
-#データサマリー
+#繝�繝ｼ繧ｿ繧ｵ繝槭Μ繝ｼ
 str(gwasResults)
 head(gwasResults)
 tail(gwasResults)
