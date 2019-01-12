@@ -1,11 +1,11 @@
 inf="raw_count_data_all_organs_tissues_190108.txt"
-x <- read.table(inf, header=T, sep="\t", row.names=1, quote="")#in_fで指定したファイルの読み込み
+x <- read.table(inf, header=T, sep="\t", row.names=1, quote="")
 
 x <- x[!duplicated(x$gene_short_name),]
 write.table(x, "raw_count_data_all_organs_tissues_unique_190108.txt", row.names=T,col.names = T, sep = "\t", quote=FALSE)
 
 inf2="raw_count_data_all_organs_tissues_unique_190108.txt"
-x2 <- read.table(inf2, header=T, sep="\t", row.names=1, quote="")#in_fで指定したファイルの読み込み
+x2 <- read.table(inf2, header=T, sep="\t", row.names=1, quote="")
 
 y <- round(x2[,3:56],0)
 
