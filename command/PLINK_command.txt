@@ -1,1 +1,0 @@
-C:\Users\n\Desktop\collabo\takahashi\plink1.9\plink--file PLINK_whiteegg_99females --allow-extra-chr --geno 0.20 --hwe 0.000001 --ci 0.95 --assoc --adjust --out PLINK_whiteegg_99females_ci
