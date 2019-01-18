@@ -27,8 +27,8 @@ par(plt = c(0.10, 0.95, 0.2, 0.9))
 
 
 #cex.axis > font size, suggestiveline=F > remove line, ylim > set range, cex > change point type
-
-manhattan(gwasResults, cex = 0.5, cex.axis = 0.8, suggestiveline = log(0.01 / 15250, 10)*-1, genomewideline = F, ylim=c(0,20))
+bonP=log(0.01 / nrow(gwasResults), 10)*-1
+manhattan(gwasResults, cex = 0.5, cex.axis = 0.8, suggestiveline = bonP, genomewideline = F, ylim=c(0,20))
 
 
 #not used
